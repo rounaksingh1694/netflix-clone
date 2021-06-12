@@ -39,3 +39,15 @@
 	transform: scale(1.3);
 	opacity: 1;
 }
+
+.row__posters:focus-within .row__item,
+.row__posters:focus,
+.row__item {
+	transform: translate(-25%);
+	z-index: 1;
+}
+
+.row__item:focus ~ .row__item,
+.row__item:hover ~ .row__item {
+	transform: translateX(25%);
+}
